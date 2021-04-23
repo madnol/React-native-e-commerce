@@ -1,5 +1,5 @@
-import React from "react";
-import { View } from "react-native";
+import React, { useState } from "react";
+import { Text, TextInput, View } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import AppText from "./app/components/AppText";
 
@@ -12,7 +12,15 @@ import Screen from "./app/screens/Screen";
 import Icon from "./app/components/Icon";
 import ListItem from "./app/components/ListItem";
 import AccountScreen from "./app/screens/AccountScreen";
+import ListingScreen from "./app/screens/ListingScreen";
+import AppTextInput from "./app/components/AppTextInput";
 
 export default function App() {
-  return <AccountScreen />;
+  const [firstName, setFirstName] = useState("");
+
+  return (
+    <Screen>
+      <AppTextInput placeholder="Username" icon="email" />
+    </Screen>
+  );
 }
