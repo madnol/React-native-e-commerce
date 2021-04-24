@@ -5,7 +5,7 @@ import Icon from "../components/Icon";
 import ListItem from "../components/ListItem";
 import ListItemSeparatorComponent from "../components/ListItemSeparator";
 import colors from "../config/colors";
-import Screen from "./Screen";
+import Screen from "../components/Screen";
 
 const menuItems = [
   {
